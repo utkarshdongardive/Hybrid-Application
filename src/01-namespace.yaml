@@ -1,0 +1,22 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: gan2-subscription-ns
+  labels:
+    app-label: gan2
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: gan2-channel-ns
+  labels:
+    app-label: gan2
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: gan2-app-ns
+  labels:
+    app-label: gan2
+---
