@@ -14,8 +14,8 @@ spec:
   type: ClusterIP
   ports:
     - name: my-http
-      port: 9030
-      targetPort: 9030
+      port: 8080
+      targetPort: 8080
   selector:
     main-app: gstore-application
     app: gstore-sales
