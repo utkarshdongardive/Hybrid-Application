@@ -1,10 +1,10 @@
-# Installing MCM App in IBM Cloud Pak for Multicloud Management Version 1.3.0 
+# Installing MCM App using GitHub Channel in IBM Cloud Pak for Multicloud Management Version 1.3.0 
 
-## Installation Steps
+## 1. Installation Steps
 
 1. Download this project from git
 
-2. Change the below values according to your cluster in the file `/src/03-subscription/21-placement`. 
+2. Change the below values according to your cluster in the file `/src/03-subscription/21-placement.yaml`. 
 
 ```
   clusterLabels:
@@ -25,7 +25,9 @@
 sh 01-install.sh
 ```
 
-## Accessing the installed application
+----------
+
+## 2. Accessing the installed application
 
 The application get installed in the mcm hub.
 
@@ -34,7 +36,7 @@ The application get installed in the mcm hub.
 2. Run the below command to find the routes installed.
 
 ```
-oc get route -n gstore-app-ns
+oc get route -n gstore-git-app-ns
 ```
 
 It may result like the below.
@@ -51,7 +53,9 @@ ex:
 http://gstore-sales-gstore-git-app-ns.ocp43-mcm-gan-a-.appdomain.cloud
 ```
 
-## Viewing App Topology
+----------
+
+## 3. Viewing App Topology
 
 The deployed applicaiton would be like this in MCM Hub console.
 
@@ -59,10 +63,11 @@ The deployed applicaiton would be like this in MCM Hub console.
 
 <img src="images/02-app-toplogy.png" >
 
+----------
 
-## Application resources Yaml files explained
+## 4. Application resources Yaml files explained
 
-Here is some details regarding yaml files used in the applicaiton located under `src` folder.
+Here is some details regarding yaml files used in the application located under `src` folder.
 
 #### Channel
 
@@ -78,7 +83,7 @@ To group the components
 
 #### Placementrule
 
-To defind the target cluster
+To define the target cluster
 
 <img src="images/12-placementrule.png" >
 
