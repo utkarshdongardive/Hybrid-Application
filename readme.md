@@ -25,7 +25,7 @@
 sh 01-install.sh
 ```
 
-----------
+-------------
 
 ## 2. Accessing the installed application
 
