@@ -1,0 +1,15 @@
+apiVersion: app.ibm.com/v1alpha1
+kind: PlacementRule
+metadata:
+  name: gstore-git-placementrule
+  namespace: gstore-git-subscription-ns
+  labels:
+    mcmapp: gstore-git
+spec: 
+  clusterReplicas: 1
+  clusterLabels:
+    matchExpressions:
+      - key: name
+        operator: In
+        values:
+          - ocp43-mcm-gan-a

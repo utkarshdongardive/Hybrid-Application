@@ -1,13 +1,9 @@
----
-# Source: gstoresales/templates/03-route-web.yaml
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   name: gstore-sales
-  # namespace: gan2-app-ns
   labels:
-    main-app: gstore-application
-    app: gstore-sales
+    app: gstore-application
 spec:
   path: /
   to:

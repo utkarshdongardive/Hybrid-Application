@@ -1,0 +1,24 @@
+apiVersion: app.ibm.com/v1alpha1
+kind: Channel
+metadata:
+  name: gstore-git-channel
+  namespace: gstore-git-channel-ns
+  labels:
+    mcmapp: gstore-git
+spec:
+  type: GitHub 
+  pathname: https://github.com/GandhiCloudLab/mcm-git-sample.git
+  configMapRef:
+    name: gstore-git-skip-cert-verify
+    kind: ConfigMap
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gstore-git-skip-cert-verify
+  namespace: gstore-git-channel-ns
+  labels:
+    mcmapp: gstore-git
+data:
+  insecureSkipVerify: "true"
+    
