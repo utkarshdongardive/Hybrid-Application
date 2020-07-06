@@ -57,7 +57,7 @@ http://gstore-sales-gstore-git-app-ns.ocp43-mcm-gan-a-.appdomain.cloud
 
 ## 3. Viewing App Topology
 
-The deployed applicaiton would be like this in MCM Hub console.
+The deployed application would be like this in MCM Hub console.
 
 <img src="images/01-applications.png" >
 
@@ -91,13 +91,13 @@ To define the target cluster
 
 To bind the channel with the placement rule. 
 
-Also it specifies the sub path of the deployables under the github repo refered by the channel. Here `repo/gstoresales` is the path.
+Also it specifies the sub path of the deployables under the github repo referred by the channel. Here `repo/gstoresales` is the path.
 
 <img src="images/13-subscription.png" >
 
 #### Namespace
 
-Namespaces to deply the app, channel and subscriptions.
+Namespaces to deploy the app, channel and subscriptions.
 
 <img src="images/14-namespace.png" >
 
